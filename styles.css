@@ -39,6 +39,20 @@ section .subtitle {
   font-size: var(--section-subtitle);
   color: var(--secondary);
 }
+section .download-cv a {
+  font-size: 0.7em;
+  padding: 5px 10px;
+  border: 1px solid var(--main);
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 6px;
+  color: var(--main);
+  transition: color 0.5s, border-color 0.5s;
+}
+section .download-cv a:hover {
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
 
 .project {
   border-left: 5px solid var(--secondary);
@@ -124,4 +138,11 @@ progress[value]::-webkit-progress-value {
 }
 progress[value]::-moz-progress-bar {
   background-color: var(--secondary);
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
