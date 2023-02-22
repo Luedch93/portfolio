@@ -1,0 +1,127 @@
+:root {
+  --main: white;
+  --secondary: #5c82f2;
+  --back: #373740;
+  --section-title: 28px;
+  --section-subtitle: 0.7em;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--back);
+  cursor: default;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  max-width: 800px;
+  padding: 15px;
+  color: var(--main);
+}
+section {
+  margin: 10px 0;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+section#projects .title {
+  margin-bottom: 10px;
+}
+section .subtitle {
+  font-size: var(--section-subtitle);
+  color: var(--secondary);
+}
+
+.project {
+  border-left: 5px solid var(--secondary);
+  padding: 5px 20px;
+  margin-bottom: 15px;
+}
+
+.project .project-title {
+  font-size: 19px;
+}
+
+.project .project-description {
+  font-size: 17px;
+}
+
+.project .project-stack {
+  margin: 5px 0;
+}
+
+.project .project-stack span {
+  border: 1px solid white;
+  padding: 3px 5px;
+  border-radius: 6px;
+  font-size: 0.5em;
+  transition: border-color 0.5s, color 0.5s;
+}
+
+.project .project-stack span:hover {
+  border-color: var(--secondary);
+  color: var(--secondary);
+}
+
+#skills > p {
+  margin-bottom: 10px;
+}
+
+.skill {
+  margin: 5px 0 5px 10px;
+}
+
+.skill p {
+  margin-bottom: 2px;
+  font-size: 0.6em;
+}
+
+address {
+  margin: 5px 0;
+}
+
+a {
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+a img {
+  fill: var(--main);
+  width: 22px;
+}
+
+hr {
+  border-color: var(--main);
+}
+
+abbr {
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+progress {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+}
+
+progress[value]::-webkit-progress-bar {
+  border-radius: 5px;
+}
+progress[value]::-webkit-progress-value {
+  border-radius: 5px;
+  background-color: var(--secondary);
+}
+progress[value]::-moz-progress-bar {
+  background-color: var(--secondary);
+}
